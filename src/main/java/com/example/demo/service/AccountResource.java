@@ -26,9 +26,10 @@ public class AccountResource {
     @ResponseStatus(HttpStatus.CREATED)
     public void registerAccount() throws InterruptedException {
         String sample= "sample";
-        setValue("arsham",sample);Thread.sleep(1000);
+        setValue("arsham",sample);
 
         System.out.println(getValue("arsham"));
+        Thread.sleep(3000);
         System.out.println(getValue("arsham"));
     }
 
